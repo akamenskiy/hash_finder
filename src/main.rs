@@ -81,7 +81,7 @@ impl Worker {
 fn main() {
     let args: Arguments = argh::from_env();
     let start = Instant::now();
-    test_run(args);
+    run(args);
     let duration = start.elapsed();
 
     println!("Time elapsed in expensive_function() is: {:?}", duration);
